@@ -11,6 +11,7 @@
 		2A4F3F6D1E9E88DF003F741E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F3F6B1E9E88DF003F741E /* Main.storyboard */; };
 		2A4F3F6F1E9E88DF003F741E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F3F6E1E9E88DF003F741E /* Assets.xcassets */; };
 		2A4F3F721E9E88DF003F741E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F3F701E9E88DF003F741E /* LaunchScreen.storyboard */; };
+		2A4F3F7C1E9E8D76003F741E /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F3F7B1E9E8D76003F741E /* StudentTableViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +21,7 @@
 		2A4F3F6E1E9E88DF003F741E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		2A4F3F711E9E88DF003F741E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		2A4F3F731E9E88DF003F741E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2A4F3F7B1E9E8D76003F741E /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -52,9 +54,8 @@
 		2A4F3F661E9E88DF003F741E /* StudentPut */ = {
 			isa = PBXGroup;
 			children = (
-				2A4F3F7A1E9E8C2E003F741E /* ViewControllers */,
 				2A4F3F671E9E88DF003F741E /* AppDelegate.swift */,
-				2A4F3F6B1E9E88DF003F741E /* Main.storyboard */,
+				2A4F3F7A1E9E8C2E003F741E /* ViewControllers */,
 				2A4F3F791E9E8C1A003F741E /* Resources */,
 			);
 			path = StudentPut;
@@ -73,6 +74,8 @@
 		2A4F3F7A1E9E8C2E003F741E /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
+				2A4F3F6B1E9E88DF003F741E /* Main.storyboard */,
+				2A4F3F7B1E9E8D76003F741E /* StudentTableViewController.swift */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -150,6 +153,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4F3F7C1E9E8D76003F741E /* StudentTableViewController.swift in Sources */,
 				2A4F3F681E9E88DF003F741E /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
