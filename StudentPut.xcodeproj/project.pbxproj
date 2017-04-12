@@ -13,6 +13,8 @@
 		2A4F3F721E9E88DF003F741E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2A4F3F701E9E88DF003F741E /* LaunchScreen.storyboard */; };
 		2A4F3F7C1E9E8D76003F741E /* StudentTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F3F7B1E9E8D76003F741E /* StudentTableViewController.swift */; };
 		2A4F3F7F1E9E8E86003F741E /* Student.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F3F7E1E9E8E86003F741E /* Student.swift */; };
+		2A4F3F821E9E91AD003F741E /* NetworkController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F3F811E9E91AD003F741E /* NetworkController.swift */; };
+		2A4F3F851E9E91EC003F741E /* StudentController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A4F3F841E9E91EC003F741E /* StudentController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		2A4F3F731E9E88DF003F741E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		2A4F3F7B1E9E8D76003F741E /* StudentTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentTableViewController.swift; sourceTree = "<group>"; };
 		2A4F3F7E1E9E8E86003F741E /* Student.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Student.swift; sourceTree = "<group>"; };
+		2A4F3F811E9E91AD003F741E /* NetworkController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkController.swift; sourceTree = "<group>"; };
+		2A4F3F841E9E91EC003F741E /* StudentController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StudentController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +61,9 @@
 			isa = PBXGroup;
 			children = (
 				2A4F3F671E9E88DF003F741E /* AppDelegate.swift */,
+				2A4F3F801E9E9197003F741E /* Networking */,
 				2A4F3F7D1E9E8E74003F741E /* Models */,
+				2A4F3F831E9E91D8003F741E /* ModelControllers */,
 				2A4F3F7A1E9E8C2E003F741E /* ViewControllers */,
 				2A4F3F791E9E8C1A003F741E /* Resources */,
 			);
@@ -89,6 +95,22 @@
 				2A4F3F7E1E9E8E86003F741E /* Student.swift */,
 			);
 			name = Models;
+			sourceTree = "<group>";
+		};
+		2A4F3F801E9E9197003F741E /* Networking */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F3F811E9E91AD003F741E /* NetworkController.swift */,
+			);
+			name = Networking;
+			sourceTree = "<group>";
+		};
+		2A4F3F831E9E91D8003F741E /* ModelControllers */ = {
+			isa = PBXGroup;
+			children = (
+				2A4F3F841E9E91EC003F741E /* StudentController.swift */,
+			);
+			name = ModelControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -164,6 +186,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2A4F3F851E9E91EC003F741E /* StudentController.swift in Sources */,
+				2A4F3F821E9E91AD003F741E /* NetworkController.swift in Sources */,
 				2A4F3F7C1E9E8D76003F741E /* StudentTableViewController.swift in Sources */,
 				2A4F3F7F1E9E8E86003F741E /* Student.swift in Sources */,
 				2A4F3F681E9E88DF003F741E /* AppDelegate.swift in Sources */,
