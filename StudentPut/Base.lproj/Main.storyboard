@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12118" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="GnY-wr-DpN">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
@@ -9,10 +9,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Student Table View Controller-->
         <scene sceneID="KCZ-AQ-8WD">
             <objects>
-                <tableViewController id="zaG-Ff-RXg" sceneMemberID="viewController">
+                <tableViewController id="zaG-Ff-RXg" customClass="StudentTableViewController" customModule="StudentPut" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="28" sectionFooterHeight="28" id="iSB-gq-3QQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -61,8 +61,15 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" id="9eg-yd-DZx">
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3AU-ZB-QJZ"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="3AU-ZB-QJZ">
+                            <connections>
+                                <action selector="addButtonTapped:" destination="zaG-Ff-RXg" id="Znr-g2-yFu"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="nameTextField" destination="tqX-af-W4j" id="72I-di-3gZ"/>
+                    </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="snd-Np-MNN" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
